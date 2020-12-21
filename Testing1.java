@@ -23,7 +23,12 @@
 
 
 public class Testing1{
-		
+	
+	public static void main(String[] args) {
+		int result = num(4);
+		System.out.println(result);
+	}
+	
 	public static int num(int n) {
 		if (n == 1)
 		{
@@ -33,11 +38,7 @@ public class Testing1{
 		{
 		    return n + num(n-1);
 		}
-	}
-	public static void main(String[] args) {
-		int n = IBIO.inputInt;
-	}
-		
+	}	
 	
 }
 
