@@ -22,11 +22,11 @@
  */
 
 
-public class Testing1{
+public class Summation2{
 	
 	public static void main(String[] args) {
-		int result = num(4);
-		System.out.println(result);
+		int s = num(4);
+		System.out.println(s);
 	}
 	
 	public static int num(int n) {

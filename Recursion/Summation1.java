@@ -22,7 +22,7 @@
  */
 
 // adding up between two set numbers
-public class recursive {
+public class Summation1 {
 	
 	public static void main (String[] args) {
 		int s = sum(1, 3);
