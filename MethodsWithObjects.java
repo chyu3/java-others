@@ -1,7 +1,7 @@
 /*
- * recursive.java
+ * MethodsWithObjects.java
  * 
- * Copyright 2020 Tina Chen <ChenTina@10-72-120-211.wifi.8.s.pas.ofs.edu.sg>
+ * Copyright 2021 Tina Chen <ChenTina@10-72-120-211.wifi.8.s.pas.ofs.edu.sg>
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,23 +21,23 @@
  * 
  */
 
-// adding up between two set numbers
-public class Summation1 {
+
+public class MethodsWithObjects {
+	
+	public void fullThrottle()
+	{
+		System.out.println("The car is going as fast as it can!");
+	}
+	
+	public void speed(int max)
+	{
+		System.out.println("Max speed is: " + max);
+	}
 	
 	public static void main (String[] args) {
-		int s = sum(1, 3);
-		System.out.println(s);
-	}
-	public static int sum(int a, int b)
-	{
-		if (b > a)
-		{
-			return b + sum(a, b - 1); //3+ (2 + sum(1, 1)
-		}
-		else
-		{
-			return b;
-		}
+		MethodsWithObjects myCar = new MethodsWithObjects();
+		myCar.fullThrottle();
+		myCar.speed(200);
 	}
 }
 
