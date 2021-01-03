@@ -28,15 +28,15 @@ public class Summation1 {
 		int s = sum(1, 3);
 		System.out.println(s);
 	}
-	public static int sum(int x, int y)
+	public static int sum(int a, int b)
 	{
-		if (y > x)
+		if (b > a)
 		{
-			return y + sum(x, y - 1); //3+ (1, 2)+ 2 (1, 1) + 1
+			return b + sum(a, b - 1); //3+ (1, 2)+ 2 (1, 1) + 1
 		}
 		else
 		{
-			return y;
+			return b;
 		}
 	}
 }
