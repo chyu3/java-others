@@ -1,5 +1,5 @@
 /*
- * sumInArray2.java
+ * sumInArray3.java
  * 
  * Copyright 2021 Tina Chen <ChenTina@10-72-120-211.wifi.8.s.pas.ofs.edu.sg>
  * 
@@ -20,30 +20,19 @@
  * 
  * 
  */
-import java.util.Arrays;
+import java.util.ArrayList; 
 
-
-public class sumInArray2 {
+public class sumInArray3 {
 	
-	public static void main(String[] args) {
-		int size = 13;
+	public static void main (String[] args) {
+		int[] a = {584349, 828867, 834858, 178126, 832169, 775444, 
+			516418, 244836, 432231, 808889, 382929, 377950, 497799};
 		
-		int[] a =  {548894, 929767, 87624,
-			680557, 448884, 676030, 608961, 151515,
-			385345, 490561, 249023, 982769, 511194};
-			
-		int[] b = {806281, 699176, 632027,
-			789205, 437229, 650272, 590308, 800053,
-			816704, 837730, 257884, 985655, 621879};
+		int[] b = {614356, 771626, 880301, 575950, 602149, 29957,
+			89874, 161653, 825569, 67179, 831783, 949389, 403670};
 		
-		int[] c = new int[size];
-		
-		for (int i = 0; i < size; i++)
-		{
-			c[i] = a[i] + b[i];
-			System.out.println(c[i]);
-		}
-		
+		int[] c = add(a, b);
+				
 	}
 }
 
