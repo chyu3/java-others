@@ -24,32 +24,30 @@
 
 public class MeanMedianModeArray {
 	
-	public static double mean(double[] m) 
+	public static double findMean(double[] a)
 	{
-		double sum = 0;
-        for (int i = 0; i < m.length; i++) 
-        {
-			sum += m[i];
+		int sum = 0;
+		for (int i = 0; i < a.length; i++)
+		{
+			sum += a[i];
 		}
-		return sum / m.length;
+		return sum / a.length;
 	}
 	
-	// the array double[] m MUST BE SORTED
-    public static double median(double[] m) 
+    public static int findMedian(int[] a)
     {
-        int middle = m.length/2;
-        if (m.length%2 == 1) 
-        {
-            return m[middle];
-        } 
-        else 
-        {
-        return (m[middle-1] + m[middle]) / 2.0;
-        }
+        
+    }
+    
+    public static int findMode(int[] a)
+    {
+		
     }
 
 
 	public static void main (String[] args) {
+		double[] array = {7, 7, 7, 8, 8, 4};
+		findMean(array);
 		
 	}
 }
