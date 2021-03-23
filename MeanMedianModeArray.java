@@ -20,35 +20,59 @@
  * 
  * 
  */
-
+import java.util.Arrays;
 
 public class MeanMedianModeArray {
 	
-	public static double findMean(double[] a)
+	public static double findMean(int[] a, int n)
 	{
 		int sum = 0;
-		for (int i = 0; i < a.length; i++)
+		for (int i = 0; i < n; i++)
 		{
 			sum += a[i];
 		}
-		return sum / a.length;
+		return (double)sum / (double)n; //allows finale average in double/with decimals
 	}
 	
-    public static int findMedian(int[] a)
-    {
-        
-    }
-    
-    public static int findMode(int[] a)
-    {
+	public static double findMedian(int[] a, int n) //find central of the array
+	{
+		Arrays.sort(a); //sort elements of an array in order
 		
-    }
+		if (n % 2 != 0) //check if array has even number of elements
+		return (double) a [n / 2];
+		
+		return (double) (a [ (n-1) / 2 ] + a[n/2] ) / 2.0;
+	}
+	
+	public static double findMode(int[] a, int n)
+	{
+	    int maxValue = 0, maxCount = 0, i, j;
 
+        for (i = 0; i < n; ++i) 
+        {
+            int count = 0;
+            for (j = 0; j < n; ++j) 
+            {
+                if (a[j] == a[i])
+                ++count;
+            }
 
+            if (count > maxCount) 
+            {
+                maxCount = count;
+                maxValue = a[i];
+            }
+        }
+        return maxValue;
+	}
+	
 	public static void main (String[] args) {
-		double[] array = {7, 7, 7, 8, 8, 4};
-		findMean(array);
+		int[] array = {16, 21, 23, 7, 18, 27, 99, 67, 99};
+		int n = array.length;  //number of elements
 		
+		System.out.println("Mean of your numbers are: " + findMean(array, n));
+		System.out.println("Median of your numbers are: " + findMedian(array, n));
+		System.out.println("Mode of your numbers are: " + findMode(array, n));
 	}
 }
 
