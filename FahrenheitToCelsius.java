@@ -22,9 +22,8 @@
  */
 
 import java.util.Scanner;
-public class FahrenheitToCelsius {
-    
-
+public class FahrenheitToCelsius 
+{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a degree in Fahrenheit: ");
