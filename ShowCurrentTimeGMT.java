@@ -1,5 +1,5 @@
 /*
- * ShowCurrentTime.java
+ * ShowCurrentTimeGMT.java
  * 
  * Copyright 2021 Tina Chen <ChenTina@10-72-120-211.wifi.8.s.pas.ofs.edu.sg>
  * 
@@ -22,7 +22,7 @@
  */
 
 
-public class ShowCurrentTime {
+public class ShowCurrentTimeGMT {
 	
 	public static void main (String[] args) {
 		//obtain the total milliseconds since midnight, Jan 1, 1970
