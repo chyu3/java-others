@@ -20,7 +20,7 @@
  * 
  * 
  */
- import java.util.Scanner
+ import java.util.Scanner;
 
 public class GuessBday {
 	
@@ -64,6 +64,49 @@ public class GuessBday {
 		//prompt the user to answer questions
 		System.out.println("Is your brithday in set1?\n");
 		System.out.println(set1);
+		System.out.println("\nEnter 0 for No and 1 for Yes: ");
+		int answer = input.nextInt();
+		
+		if (answer == 1)
+			day += 1;
+			
+		//prompt the user to answer questions
+		System.out.println("\nIs your birthday in set2?\n");
+		System.out.println(set2);
+		System.out.println("\nEnter 0 for No and 1 for Yes: ");
+		answer = input.nextInt();
+		
+		if (answer == 1)
+			day += 2;
+			
+		//prompt the user to answer questions
+		System.out.println("\nIs your birthday in set3?\n");
+		System.out.println(set3);
+		System.out.println("\nEnter 0 for No and 1 for Yes: ");
+		answer = input.nextInt();
+		
+		if (answer == 1)
+			day += 4;
+			
+		//prompt the user to answer questions
+		System.out.println("\nIs your birthday in set4?\n");
+		System.out.println(set4);
+		System.out.println("\nEnter 0 for No and 1 for Yes: ");
+		answer = input.nextInt();
+		
+		if (answer == 1)
+			day += 8;
+			
+		//prompt the user to answer questions
+		System.out.println("\nIs your birthday in set5?\n");
+		System.out.println(set5);
+		System.out.println("\nEnter 0 for No and 1 for Yes: ");
+		answer = input.nextInt();
+		
+		if (answer == 1)
+			day += 16;
+			
+		System.out.println("\nYour birthday is: " + day + "!");
 	}
 }
 
